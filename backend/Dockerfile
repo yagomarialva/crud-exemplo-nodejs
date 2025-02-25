@@ -10,6 +10,9 @@ COPY package*.json ./
 # Instala as dependências
 RUN npm install
 
+# Desabilita verificação de SSL (apenas para desenvolvimento)
+RUN npm config set strict-ssl false
+
 # Copia todos os arquivos do projeto para o container
 COPY . .
 

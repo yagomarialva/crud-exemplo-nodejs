@@ -24,7 +24,7 @@ services:
     volumes:
       - ./backend:/app
     working_dir: /app
-    command: ["npm", "run", "dev"]
+    command: ["npx", "nodemon", "server.js"]
     environment:
       - DB_HOST=db
       - DB_USER=user
