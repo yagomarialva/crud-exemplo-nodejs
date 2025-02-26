@@ -26,11 +26,11 @@ services:
     working_dir: /app
     command: ["npx", "nodemon", "server.js"]
     environment:
-      - DB_HOST=db
-      - DB_USER=user
-      - DB_PASSWORD=password
-      - DB_NAME=crud_db
-      - DB_DIALECT=postgres
+      - DB_HOST=${DB_HOST}
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_NAME=${DB_NAME}
+      - DB_DIALECT=${DB_DIALECT}
 
 volumes:
   postgres_data:

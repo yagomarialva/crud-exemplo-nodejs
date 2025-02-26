@@ -12,6 +12,8 @@ RUN npm install
 
 # Desabilita verificação de SSL (apenas para desenvolvimento)
 RUN npm config set strict-ssl false
+RUN npm install dotenv --save
+
 
 # Copia todos os arquivos do projeto para o container
 COPY . .
