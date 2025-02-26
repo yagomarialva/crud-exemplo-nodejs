@@ -19,7 +19,7 @@ RUN npm install dotenv --save
 COPY . .
 
 # Expõe a porta que o backend usará
-EXPOSE 5001
+EXPOSE 5000
 
 # Comando para iniciar a aplicação
 CMD ["npm", "run", "dev"]

@@ -10,7 +10,7 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
-
+console.log("Variáveis de ambiente:", process.env.DB_USER, process.env.DB_NAME);
 // Conectar ao banco de dados
 (async () => {
   try {

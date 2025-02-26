@@ -18,7 +18,7 @@ services:
     container_name: node_backend
     restart: always
     ports:
-      - "5001:5001"
+      - "5000:5000"
     depends_on:
       - db
     volumes:
